@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder;
 public class BlockChain {
 
     public static ArrayList<Block> blockchain = new ArrayList<Block>();
-    public static int difficulty = 1;
+    public static int difficulty = 5;
 
     public static Boolean isChainValid() {
         Block currentBlock;

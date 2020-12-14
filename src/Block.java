@@ -17,7 +17,7 @@ public class Block {
 
     // Calculate has based on contents of block
     public String calculateHash() {
-        String calculatedHash = StringUtil.applySha256(previousHash + Long.toString(timeStamp) + data);
+        String calculatedHash = StringUtil.applySha256(previousHash + Long.toString(timeStamp) + Integer.toString(nonce) + data);
         return calculatedHash;
     }
 
